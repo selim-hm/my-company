@@ -10484,11 +10484,11 @@ jQuery.proxy = function( fn, context ) {
 };
 
 jQuery.holdReady = function( hold ) {
-	// if ( hold ) {
-	// 	jQuery.readyWait++;
-	// } else {
-	// 	jQuery.ready( true );
-	// }
+	if ( hold ) {
+		jQuery.readyWait++;
+	} else {
+		jQuery.ready( true );
+	}
 };
 jQuery.isArray = Array.isArray;
 jQuery.parseJSON = JSON.parse;
